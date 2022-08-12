@@ -24,7 +24,7 @@ export const ListingNotes = () => {
 
     const HandleSubmit = async() => {
 
-        await addDoc(titleCollection , data)
+        await addDoc(titleCollection , data).then(() => getData())
     }
 
     
