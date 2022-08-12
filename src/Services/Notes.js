@@ -1,6 +1,5 @@
-import firebase from "../firebase";
 
-const db = firebase.ref("/notes");
+import db from "../firebase";
 
 
 const getAll = () => {
