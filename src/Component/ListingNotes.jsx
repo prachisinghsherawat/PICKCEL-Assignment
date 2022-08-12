@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { db } from "../firebase"
-import { collection, doc, getDocs } from "firebase/firestore"
+import { addDoc, collection, doc, getDocs } from "firebase/firestore"
 import { useEffect } from "react"
 
 export const ListingNotes = () => {
@@ -22,9 +22,10 @@ export const ListingNotes = () => {
         setData({...data , [id] : value})
     }
 
-    const HandleSubmit = () => [
-        
-    ]
+    const HandleSubmit = async() => {
+
+        await addDoc(titleCollection , data)
+    }
 
     
 
