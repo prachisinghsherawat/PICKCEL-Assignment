@@ -53,8 +53,7 @@ export const ListingNotes = () => {
 
         {titles.map((el)=>(
             <div>
-                <p> Title : {el.title}</p>
-                <p> Notes : {el.notes}</p>
+                <p> Title : {el.title} |  Notes : {el.notes}</p>
                 
             </div>
         ))}
